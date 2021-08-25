@@ -116,24 +116,14 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# system specific
-export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}}
-export LD_LIBRARY_PATH=/usr/local/cuda-10.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
-export LD_LIBRARY_PATH=/usr/local/cuda/extras/CUPTI/lib64:$LD_LIBRARY_PATH
-
-# ros and useful aliases
-source /opt/ros/melodic/setup.bash
-source ~/mbz2020_ws/devel/setup.bash
-
-alias rosbuild='cd ~/mbz2020_ws && catkin build'
+alias ros1-source='source /opt/ros/noetic/setup.bash'
 alias source-rc='source ~/.bashrc'
 
-# shortcuts for mbzirc
-alias pingm5='ping 10.218.3.205'
-alias pingm2='ping 10.218.3.202'
-alias m5='ssh mbz@10.218.3.205'
-alias m2='ssh mbz@10.218.3.202'
-alias m6='ssh ubuntu@manifold'
+# indy shortcuts
+alias pingp='ping 10.42.4.200'
+alias sshp='ssh user@10.42.4.200'
+alias sshp1='ssh user@10.42.0.200'
 
-# shimizu
-alias re-source='source ~/shimizu/shimizu_core_ws/devel/setup.bash'
+# source ~/iacbasestation_ws/operations/scripts/setup.bash
+
+# fish
