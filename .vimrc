@@ -260,7 +260,7 @@ fun! CleanExtraSpaces()
 endfun
 
 if has("autocmd")
-    autocmd BufWritePre *.cpp,*.launch,*.xml,*.h,*.hppm*.c,*.txt,*.js,*.py,*.wiki,*.sh,*.coffee,*.urdf :call CleanExtraSpaces()
+    autocmd BufWritePre *.cpp,*.launch,*.xml,*.h,*.hppm*.c,*.txt,*.js,*.py,*.wiki,*.sh,*.coffee,*.urdf,*.Dockerfile :call CleanExtraSpaces()
 endif
 
 
