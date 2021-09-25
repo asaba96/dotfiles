@@ -117,13 +117,16 @@ if ! shopt -oq posix; then
 fi
 
 alias ros1-source='source /opt/ros/noetic/setup.bash'
+alias foxy-source='source /opt/ros/foxy/setup.bash'
+alias ros2-source='source /opt/ros/galactic/setup.bash'
 alias source-rc='source ~/.bashrc'
 
 # indy shortcuts
-alias pingp='ping 10.42.4.200'
-alias sshp='ssh user@10.42.4.200'
+alias pingp='ping 10.42.8.200'
+alias sshp='ssh user@10.42.8.200'
 alias sshp1='ssh user@10.42.0.200'
+alias bs_source='source $HOME/indy/iacbasestation_ws/operations/scripts/setup.bash'
 
-# source ~/iacbasestation_ws/operations/scripts/setup.bash
+source ~/indy/joint-bvs-ws/install/setup.bash
 
 # fish
